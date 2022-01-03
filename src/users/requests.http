@@ -3,8 +3,17 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "aaa@mail.com",
-  "password": "aaamailcom"
+  "email": "one@mail.com",
+  "password": "onecom"
+}
+
+### Sign in
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+  "email": "one@mail.com",
+  "password": "onecom"
 }
 
 ### Find a particular user with a given ID
@@ -25,3 +34,9 @@ content-type: application/json
 {
   "email": "fdddd@mail.com"
 }
+
+### Set a color
+GET http://localhost:3000/auth/colors/red
+
+### Get a color
+GET http://localhost:3000/auth/colors
